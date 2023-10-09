@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Inventario</title>
+</head>
+<body>
+    <h1>Sistema de Gestión de Inventario</h1>
+
+    <!-- Formulario para agregar producto -->
+    <h2>Agregar Producto</h2>
+    <form id="agregarProductoForm">
+        <label for="nombre">Nombre del producto:</label>
+        <input type="text" id="nombre" required><br>
+
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" required><br>
+
+        <label for="cantidad">Cantidad en stock:</label>
+        <input type="number" id="cantidad" required><br>
+
+        <button type="submit">Agregar Producto</button>
+    </form>
+
+    <!-- Formulario para realizar venta -->
+    <h2>Realizar Venta</h2>
+    <form id="realizarVentaForm">
+        <label for="productoVendido">Producto vendido:</label>
+        <input type="text" id="productoVendido" required><br>
+
+        <label for="cantidadVendida">Cantidad vendida:</label>
+        <input type="number" id="cantidadVendida" required><br>
+
+        <button type="submit">Realizar Venta</button>
+    </form>
+
+    <!-- Mostrar resultados -->
+    <div id="resultados"></div>
+
+    <script src="../js/utilidades.js"></script>
+
+
+</body>
+</html>
